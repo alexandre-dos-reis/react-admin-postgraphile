@@ -1,0 +1,31 @@
+{
+  "name": "postgraphile-react-admin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "postgraphile:dev:watch": "npx postgraphile -c postgres://user:pass@localhost:8765/db --watch --enhance-graphiql --cors --append-plugins @graphile-contrib/pg-simplify-inflector"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.4",
+    "@apollo/react-hooks": "^4.0.0",
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "graphql": "^16.6.0",
+    "postgraphile": "^4.13.0",
+    "ra-data-graphql": "^4.6.0",
+    "ra-postgraphile": "^6.1.0",
+    "react": "^18.2.0",
+    "react-admin": "^4.7.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0"
+  }
+}
